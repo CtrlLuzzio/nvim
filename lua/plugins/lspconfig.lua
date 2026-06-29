@@ -11,6 +11,7 @@ return {
 	"saadparwaiz1/cmp_luasnip",
 	"L3MON4D3/LuaSnip",
 	"rafamadriz/friendly-snippets",
+	"odoo/odoo-neovim",
     },
     config = function()
 	local lspconfig_defaults = require("lspconfig").util.default_config

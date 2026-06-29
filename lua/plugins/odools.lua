@@ -1,3 +1,0 @@
-return {
-    "odoo/odoo-neovim"
-}
