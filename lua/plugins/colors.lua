@@ -3,21 +3,30 @@ local function transparency()
 end
 return {
     {
-    "folke/tokyonight.nvim",
-    lazy = false,
-    priority = 1000,
-    config = function()
-      vim.cmd([[colorscheme tokyonight]])
-      transparency()
-    end,
-  },
-  {
-    "nvim-lualine/lualine.nvim",
-    dependencies = {
-	"nvim-tree/nvim-web-devicons",
+	"folke/tokyonight.nvim",
+	lazy = false,
+	priority = 1000,
+	config = function()
+	    transparency()
+	end,
     },
-    opts = {
-	theme = "tokyonight",
-    }
-  },
+    { "catppuccin/nvim",
+	name = "catppuccin",
+	priority = 1000 ,
+	config = function ()
+	    require("catppuccin").setup({
+		flavour = "mocha",
+		transparent_background = true,
+	    })
+	end,
+    },
+    {
+	"nvim-lualine/lualine.nvim",
+	dependencies = {
+	    "nvim-tree/nvim-web-devicons",
+	},
+	opts = {
+	    theme = "auto",
+	}
+    },
 }
