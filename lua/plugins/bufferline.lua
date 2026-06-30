@@ -7,7 +7,7 @@ return {
 	    options={
 		offsets = {
 		    {
-			filetype = "netrw",
+			filetype = "NvimTree",
 			text = "Explorer",
 			text_align = "center",
 			separator = true
