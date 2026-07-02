@@ -41,6 +41,8 @@ return {
 		"ts_ls",
 		"ruff",
 		"ty",
+		"yamlls",
+		"somesass_ls",
 	    },
 	})
 
@@ -52,6 +54,8 @@ return {
 	vim.lsp.enable("nil_ls")
 	vim.lsp.enable("nixfmt")
 	vim.lsp.enable("nixpkgs_fmt")
+	vim.lsp.enable("yamlls")
+	vim.lsp.enable("somesass_ls")
 	vim.lsp.config("odoo_ls", {
 	    cmd = {
 		vim.env.HOME .. "/.local/share/nvim/odoo/odoo_ls_server",
